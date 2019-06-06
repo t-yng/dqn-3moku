@@ -28,7 +28,7 @@ if __name__ == "__main__":
 
   # Epsilon-greedyを使ってたまに冒険。50000ステップでend_epsilonとなる
   explorer = chainerrl.explorers.LinearDecayEpsilonGreedy(
-    start_epsilon=1.0, end_epsilon=0.3, decay_steps=50000, random_action_func=ra.random_action_func
+    start_epsilon=1.0, end_epsilon=0.2, decay_steps=50000, random_action_func=ra.random_action_func
   )
 
   # Experience ReplayというDQNで用いる学習手法で使うバッファ
