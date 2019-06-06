@@ -30,11 +30,6 @@ class Board():
       self.winner = 0
       self.done = True
 
-        # self.show()
-        # print("winner: ", self.winner)
-        # time.sleep(1)
-
-
   def get_empty_pos(self):
       empties = np.where(self.board==0)[0]
       if len(empties) > 0:
@@ -55,3 +50,4 @@ class Board():
           tempboard.append(" ")
 
       print((row + hr + row + hr + row).format(*tempboard))
+      print("\n")

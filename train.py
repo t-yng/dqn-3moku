@@ -6,6 +6,9 @@ import chainer
 import chainerrl
 import numpy as np
 
+# 学習ゲーム回数
+N_EPISODES = 50000
+
 if __name__ == "__main__":
   # ボードの準備
   board = Board()
@@ -43,16 +46,13 @@ if __name__ == "__main__":
     target_update_interval=100
   )
 
-  # 学習ゲーム回数
-  n_episodes = 20000
-
   # カウンタの宣言
   miss = 0
   win = 0
   draw = 0
 
   # エピソードの繰り返し実行
-  for i in range(1, n_episodes + 1):
+  for i in range(1, N_EPISODES + 1):
     board.reset()
     reward = 0
     agents = [agent_p1, agent_p2]
