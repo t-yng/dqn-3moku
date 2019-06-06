@@ -7,7 +7,7 @@ import chainerrl
 import numpy as np
 
 # 学習ゲーム回数
-N_EPISODES = 50000
+N_EPISODES = 100000
 
 if __name__ == "__main__":
   # ボードの準備
