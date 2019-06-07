@@ -37,7 +37,7 @@ if __name__ == "__main__":
     replay_start_size=500, update_interval=1,
     target_update_interval=100
   )
-  agent.load("result_20000")
+  agent.load("result_100000")
 
   humanPlayer = HumanPlayer()
   board = Board()
