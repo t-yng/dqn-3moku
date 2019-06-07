@@ -5,6 +5,7 @@ verify_ssl = true
 
 [scripts]
 train = "python3 src/train.py"
+vs = "python3 src/vs.py"
 
 [dev-packages]
 
