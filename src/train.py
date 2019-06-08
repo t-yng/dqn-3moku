@@ -20,6 +20,7 @@ if __name__ == "__main__":
 
   # Q-functionとオプティマイザのセットアップ
   q_func = QFunction(obs_size, n_actions)
+  q_func.to_gpu()
   optimizer = chainer.optimizers.Adam(eps=1e-2)
   optimizer.setup(q_func)
 
